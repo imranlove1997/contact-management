@@ -1,0 +1,17 @@
+<%- include('content/header') -%>
+    <div class="container">
+    <%- include('content/nav') -%>
+    <h1>All Contacts</h1>
+    <div class="contact-list">
+      <% contacts.forEach(contact => { %>
+        <div class="contact-card">
+      <h2><%= contact.name %></h2>
+      <h3><%= contact.number %></h3>
+      <span><a href="<%= contact._id %>/edit">Edit</a></span>
+      <span><a href="<%= contact._id %>/delete">Delete</a></span>
+    </div>
+      <% }) %>
+    </div>
+  </div>
+  </body>
+</html>

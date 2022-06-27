@@ -1,0 +1,12 @@
+<%- include('content/header') -%>
+    <div class="container">
+    <%- include('content/nav') -%>
+    <div class="container">
+    <form action="/<%= contact._id %>" method="POST">
+        <input type="text" name="name" id="name" value="<%= contact.name %>"/>
+        <input type="number" name="number" id="number" value="<%= contact.number %>" />
+        <input type="submit" value="Edit Contact"/> 
+      </form>
+    </div>
+</body>
+</html>

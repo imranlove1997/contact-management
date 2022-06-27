@@ -1,0 +1,11 @@
+<%- include('content/header') -%>
+    <div class="container">
+    <%- include('content/nav') -%>
+    <% data.forEach(d => { %>
+        <div class="search-field">
+        <p><%= d.name %></p><span><%= d.number %></span>
+    </div>
+        <% }) %>
+</div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<%- include('content/header') -%>
+    <div class="container">
+    <%- include('content/nav') -%>
+    <% if(exist) { %>
+        <p><%= exist %></p>
+    <% }%>
+    <% if(success) { %>
+        <p><%= success %></p>
+    <% }%>
+    <form action="/add/contact" method="POST">
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required/>
+        <input type="number" name="number" id="number" placeholder="Enter Phone Number" required />
+        <input type="submit" value="Add Contact"/> 
+      </form>
+    </div>
+</body>
+</html>

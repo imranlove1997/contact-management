@@ -1,0 +1,11 @@
+<%- include('content/header') -%>
+    <div class="container">
+    <%- include('content/nav') -%>
+    <h1>Search Contact</h1>
+    <form action="/search/find" method="post">
+        <input type="text" name="name" id="name" placeholder="Enter Name" />
+        <input type="submit" value="Search">
+    </form>
+  </div>
+  </body>
+</html>
